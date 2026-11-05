@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção Brasileira de Futebol | A História da Amarelinha</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cbn: {
+                            gold: '#FFDF00',
+                            goldHover: '#E5C800',
+                            green: '#009B3A',
+                            darkGreen: '#006B28',
+                            blue: '#002776',
+                            darkBg: '#0B0F17',
+                            cardBg: '#131924',
+                            borderBg: '#222A3A'
+                        }
+                    },
+                    fontFamily: {
+                        teko: ['Teko', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cbn-darkBg text-slate-100 font-sans selection:bg-cbn-gold selection:text-cbn-darkBg overflow-x-hidden">
+
+    
+    <header class="fixed top-0 left-0 w-full z-50 bg-cbn-darkBg/90 backdrop-blur-md border-b border-cbn-borderBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cbn-green via-cbn-gold to-cbn-blue p-[2px] shadow-lg group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-cbn-darkBg rounded-full flex items-center justify-center font-teko text-2xl font-bold text-cbn-gold">
+                        CBF
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-teko text-2xl font-bold tracking-wider leading-none text-white">SELEÇÃO <span class="text-cbn-gold">BRASILEIRA</span></span>
+                    <span class="text-[10px] tracking-widest uppercase text-slate-400 font-semibold">Pentacampeã Mundial</span>
+                </div>
+            </a>
+
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#inicio" class="hover:text-cbn-gold transition-colors">Início</a>
+                <a href="#historia" class="hover:text-cbn-gold transition-colors">História</a>
+                <a href="#copas" class="hover:text-cbn-gold transition-colors">As 5 Copas</a>
+                <a href="#idolos" class="hover:text-cbn-gold transition-colors">Ídolos</a>
+                <a href="#stats" class="hover:text-cbn-gold transition-colors">Títulos & Stats</a>
+                <a href="#uniformes" class="hover:text-cbn-gold transition-colors">Uniformes</a>
+            </nav>
+
+            
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-cbn-gold focus:outline-none p-2">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-cbn-cardBg border-b border-cbn-borderBg px-6 py-6 space-y-4 font-semibold text-base">
+            <a href="#inicio" class="block hover:text-cbn-gold transition-colors mobile-link">Início</a>
+            <a href="#historia" class="block hover:text-cbn-gold transition-colors mobile-link">História</a>
+            <a href="#copas" class="block hover:text-cbn-gold transition-colors mobile-link">As 5 Copas</a>
+            <a href="#idolos" class="block hover:text-cbn-gold transition-colors mobile-link">Ídolos</a>
+            <a href="#stats" class="block hover:text-cbn-gold transition-colors mobile-link">Títulos & Stats</a>
+            <a href="#uniformes" class="block hover:text-cbn-gold transition-colors mobile-link">Uniformes</a>
+        </div>
+    </header>
+
+    
+    <section id="inicio" class="relative min-h-screen pt-20 flex items-center justify-center overflow-hidden bg-gradient-to-b from-cbn-darkBg via-cbn-cardBg/60 to-cbn-darkBg">
+        
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cbn-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-[300px] h-[300px] bg-cbn-green/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center z-10 py-16">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cbn-gold/10 border border-cbn-gold/30 mb-8 animate-pulse">
+                <div class="flex space-x-1 text-cbn-gold">
+                    <i data-lucide="star" class="w-4 h-4 fill-cbn-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-cbn-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-cbn-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-cbn-gold"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-cbn-gold"></i>
+                </div>
+                <span class="text-xs font-bold uppercase tracking-widest text-cbn-gold">A Maior Seleção do Planeta</span>
+            </div>
+
+            
+            <h1 class="font-teko text-6xl sm:text-8xl lg:text-9xl font-bold tracking-tight uppercase leading-none mb-6">
+                A MAIOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-cbn-gold via-yellow-200 to-cbn-gold text-glow">SELEÇÃO</span> DO MUNDO
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-slate-300 text-lg sm:text-xl font-light leading-relaxed mb-10">
+                Pátria em chuteiras, a única pentacampeã do planeta e o berço do futebol arte. Conheça a trajetória épica, os deuses da bola e o templo de glórias do manto canarinho.
+            </p>
+
+        
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#historia" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-cbn-gold text-cbn-darkBg font-bold text-lg hover:bg-cbn-goldHover transition-all shadow-lg shadow-cbn-gold/20 flex items-center justify-center gap-2">
+                    <i data-lucide="history" class="w-5 h-5"></i>
+                    Explorar a História
+                </a>
+                <a href="#copas" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-cbn-cardBg border border-cbn-borderBg text-white font-bold text-lg hover:border-cbn-gold/50 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="trophy" class="w-5 h-5 text-cbn-gold"></i>
+                    As 5 Copas
+                </a>
+            </div>
+
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-cbn-borderBg/60">
+                <div class="bg-cbn-cardBg/40 backdrop-blur border border-cbn-borderBg p-4 rounded-xl">
+                    <span class="font-teko text-5xl font-bold text-cbn-gold block">5</span>
+                    <span class="text-xs uppercase text-slate-400 font-medium tracking-wider">Copas do Mundo</span>
+                </div>
+                <div class="bg-cbn-cardBg/40 backdrop-blur border border-cbn-borderBg p-4 rounded-xl">
+                    <span class="font-teko text-5xl font-bold text-cbn-gold block">1914</span>
+                    <span class="text-xs uppercase text-slate-400 font-medium tracking-wider">Ano de Fundação</span>
+                </div>
+                <div class="bg-cbn-cardBg/40 backdrop-blur border border-cbn-borderBg p-4 rounded-xl">
+                    <span class="font-teko text-5xl font-bold text-cbn-gold block">9</span>
+                    <span class="text-xs uppercase text-slate-400 font-medium tracking-wider">Copas América</span>
+                </div>
+                <div class="bg-cbn-cardBg/40 backdrop-blur border border-cbn-borderBg p-4 rounded-xl">
+                    <span class="font-teko text-5xl font-bold text-cbn-gold block">4</span>
+                    <span class="text-xs uppercase text-slate-400 font-medium tracking-wider">Confederações</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="historia" class="py-24 bg-cbn-darkBg relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <span class="text-cbn-gold text-sm font-bold tracking-widest uppercase mb-2 block">Linha do Tempo</span>
+                <h2 class="font-teko text-5xl sm:text-6xl font-bold uppercase tracking-wider">Momentos Marcantes</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">A trajetória lendária da Canarinho contada através das grandes eras e traumas que forjaram a camisa mais vitoriosa do futebol.</p>
+            </div>
+>
+            <div class="relative pl-8 sm:pl-12 border-l-2 border-cbn-borderBg space-y-12">
+                
+                <div class="absolute top-0 left-[-2px] bottom-0 w-[2px] timeline-line"></div>
+
+                
+                <div class="relative group">
+                    
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1914</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">A Fundação e o Primeiro Jogo</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        A Seleção Brasileira de Futebol nasceu oficialmente em 1914. O primeiro confronto da história ocorreu no Estádio das Laranjeiras, no Rio de Janeiro, contra o clube inglês Exeter City. Com gols de Oswaldo Gomes e Osman, o Brasil venceu por 2 a 0, dando os primeiros passos de uma saga inigualável.
+                    </p>
+                    <div class="inline-flex gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">O Início da Lenda</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Laranjeiras</span>
+                    </div>
+                </div>
+
+                <!-- 1950 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1950</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">O Maracanazo</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Diante de quase 200 mil pessoas no Maracanã, o Brasil precisava apenas de um empate com o Uruguai para ser campeão do mundo. Perdeu de virada por 2 a 1. O trauma foi tão profundo que a camisa branca foi aposentada para sempre — e substituída pelo amarelo canarinho desenhado por Aldyr Garcia Schlee.
+                    </p>
+                    <div class="inline-flex gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">O Dia Que Mudou Tudo</span>
+                    </div>
+                </div>
+
+                <!-- 1958 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1958</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">A Primeira Estrela</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Na Suécia, um garoto de 17 anos chamado Pelé e um ponta de pernas tortas chamado Garrincha conduzem o Brasil ao primeiro título mundial: 5 a 2 sobre os donos da casa na final. O choro de Pelé no ombro de Didi virou imagem eterna do esporte.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Campeão do Mundo</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Suécia</span>
+                    </div>
+                </div>
+
+                <!-- 1962 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1962</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">Bicampeã Sem Pelé</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Pelé se lesionou no segundo jogo, e o mundo achou que era o fim. Mas Garrincha assumiu a seleção como ninguém e o Brasil venceu a Tchecoslováquia por 3 a 1 na final do Chile. Bicampeonato consecutivo — feito raríssimo na história das Copas.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Campeão do Mundo</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Chile</span>
+                    </div>
+                </div>
+
+                <!-- 1970 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1970</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">A Maior de Todas</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Pelé, Jairzinho, Tostão, Rivellino, Gérson e Carlos Alberto formaram o time que muitos consideram o melhor da história. A final contra a Itália terminou 4 a 1, com o gol coletivo perfeito de Carlos Alberto. O Brasil conquistou o tri e ficou definitivamente com a Taça Jules Rimet.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Campeão do Mundo</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">México</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Tri</span>
+                    </div>
+                </div>
+
+                <!-- 1982 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1982</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">A Beleza Sem Troféu</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Zico, Sócrates, Falcão, Júnior e Éder encantaram o mundo na Espanha com o futebol mais bonito desde 1970 — mas caíram diante da Itália de Paolo Rossi em um dos jogos mais dramáticos de todos os tempos. A prova de que nem sempre a arte vence.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Futebol Arte</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Espanha</span>
+                    </div>
+                </div>
+
+                <!-- 1994 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">1994</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">O Tetra nos EUA</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Após 24 anos de espera, o Brasil voltou ao topo sob comando de Carlos Alberto Parreira e a genialidade da dupla Romário e Bebeto. Em uma final dramática decidida nos pênaltis contra a Itália (3x2), Galvão Bueno gritou: "É Tetra!".
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Tetracampeão</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">EUA</span>
+                    </div>
+                </div>
+
+                <!-- 2002 -->
+                <div class="relative group">
+                    <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full border-2 border-cbn-gold bg-cbn-darkBg group-hover:bg-cbn-gold transition-colors flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-cbn-gold group-hover:bg-cbn-darkBg"></div>
+                    </div>
+
+                    <div class="font-teko text-5xl sm:text-6xl font-bold text-cbn-gold leading-none tracking-wide mb-2">2002</div>
+                    <h3 class="font-teko text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white mb-3">O Penta na Coreia & Japão</h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light mb-4">
+                        Com a redenção lendária de Ronaldo Fenômeno após a convulsão de 98, o brilho de Rivaldo e Ronaldinho Gaúcho, a Família Scolari dominou o torneio com 7 vitórias em 7 jogos. Na final, Brasil 2x0 Alemanha. O Pentacampeonato isolado e definitivo!
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-cbn-gold">Pentacampeão</span>
+                        <span class="px-3 py-1 rounded font-teko text-xs tracking-wider uppercase bg-cbn-cardBg border border-cbn-borderBg text-slate-300">Japão & Coreia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AS 5 COPAS SECTION -->
+    <section id="copas" class="py-24 bg-cbn-cardBg/40 border-y border-cbn-borderBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-cbn-gold text-sm font-bold tracking-widest uppercase mb-2 block">As Cinco Estrelas</span>
+                <h2 class="font-teko text-5xl sm:text-6xl font-bold uppercase tracking-wider">A Saga das Copas do Mundo</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">Clique nos anos das conquistas para visualizar os detalhes completos das campanhas vitoriosas.</p>
+            </div>
+
+            <!-- Copas Tabs Buttons -->
+            <div class="flex items-center justify-center flex-wrap gap-3 mb-12" id="copas-tabs">
+                <button onclick="switchCopa('1958')" id="tab-1958" class="copa-tab px-6 py-3 rounded-xl border border-cbn-gold bg-cbn-gold text-cbn-darkBg font-teko text-2xl font-bold tracking-wider transition-all">
+                    1958 - SUÉCIA
+                </button>
+                <button onclick="switchCopa('1962')" id="tab-1962" class="copa-tab px-6 py-3 rounded-xl border border-cbn-borderBg bg-cbn-cardBg text-slate-300 hover:border-cbn-gold/50 font-teko text-2xl font-bold tracking-wider transition-all">
+                    1962 - CHILE
+                </button>
+                <button onclick="switchCopa('1970')" id="tab-1970" class="copa-tab px-6 py-3 rounded-xl border border-cbn-borderBg bg-cbn-cardBg text-slate-300 hover:border-cbn-gold/50 font-teko text-2xl font-bold tracking-wider transition-all">
+                    1970 - MÉXICO
+                </button>
+                <button onclick="switchCopa('1994')" id="tab-1994" class="copa-tab px-6 py-3 rounded-xl border border-cbn-borderBg bg-cbn-cardBg text-slate-300 hover:border-cbn-gold/50 font-teko text-2xl font-bold tracking-wider transition-all">
+                    1994 - EUA
+                </button>
+                <button onclick="switchCopa('2002')" id="tab-2002" class="copa-tab px-6 py-3 rounded-xl border border-cbn-borderBg bg-cbn-cardBg text-slate-300 hover:border-cbn-gold/50 font-teko text-2xl font-bold tracking-wider transition-all">
+                    2002 - COREIA/JAPÃO
+                </button>
+            </div>
+
+            <!-- Copa Display Content Box -->
+            <div id="copa-content" class="bg-cbn-cardBg border border-cbn-borderBg rounded-2xl p-6 sm:p-10 shadow-2xl transition-all">
+                <!-- Content will be rendered dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ÍDOLOS SECTION -->
+    <section id="idolos" class="py-24 bg-cbn-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-cbn-gold text-sm font-bold tracking-widest uppercase mb-2 block">Panteão de Mitos</span>
+                <h2 class="font-teko text-5xl sm:text-6xl font-bold uppercase tracking-wider">Os Maiorais da História</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">Lendas ordenadas por impacto, conquistas e números expressivos vestindo a camisa verde e amarela.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="idolos-grid">
+                <!-- JavaScript handles rendering idol cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TÍTULOS E STATS SECTION -->
+    <section id="stats" class="py-24 bg-cbn-cardBg/40 border-t border-cbn-borderBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-cbn-gold text-sm font-bold tracking-widest uppercase mb-2 block">Números & Glórias</span>
+                <h2 class="font-teko text-5xl sm:text-6xl font-bold uppercase tracking-wider">Títulos e Estatísticas</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">A soberania do futebol brasileiro em números absolutos.</p>
+            </div>
+
+            <!-- Trophy Cabinet Grid -->
+            <div class="mb-16">
+                <h3 class="font-teko text-3xl font-bold text-cbn-gold uppercase tracking-wider mb-6 flex items-center gap-2">
+                    <i data-lucide="trophy" class="w-7 h-7"></i> Galeria de Troféus Oficiais
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">5</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Copas do Mundo</span>
+                        <span class="text-[10px] text-slate-400 block">58, 62, 70, 94, 02</span>
+                    </div>
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">4</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Confederações</span>
+                        <span class="text-[10px] text-slate-400 block">97, 05, 09, 13</span>
+                    </div>
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">9</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Copas América</span>
+                        <span class="text-[10px] text-slate-400 block">19, 22, 49, 89, 97...</span>
+                    </div>
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">2</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Ouros Olímpicos</span>
+                        <span class="text-[10px] text-slate-400 block">2016, 2020</span>
+                    </div>
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">5</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Mundiais Sub-20</span>
+                        <span class="text-[10px] text-slate-400 block">83, 85, 93, 03, 11</span>
+                    </div>
+                    <div class="bg-cbn-cardBg border border-cbn-borderBg p-5 rounded-xl text-center hover:border-cbn-gold/50 transition-colors">
+                        <span class="font-teko text-5xl font-bold text-cbn-gold block">4</span>
+                        <span class="text-xs font-bold text-white uppercase block mt-1">Mundiais Sub-17</span>
+                        <span class="text-[10px] text-slate-400 block">97, 99, 03, 19</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboards Grid (Artilheiros & Jogos) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Top Scorers -->
+                <div class="bg-cbn-cardBg border border-cbn-borderBg p-6 sm:p-8 rounded-2xl">
+                    <h3 class="font-teko text-3xl font-bold text-white uppercase tracking-wider mb-6 flex items-center justify-between">
+                        <span>Maiores Artilheiros</span>
+                        <i data-lucide="target" class="w-6 h-6 text-cbn-gold"></i>
+                    </h3>
+                    <div class="space-y-4" id="artilheiros-list">
+                        <!-- JS Render -->
+                    </div>
+                </div>
+
+                <!-- Most Appearances -->
+                <div class="bg-cbn-cardBg border border-cbn-borderBg p-6 sm:p-8 rounded-2xl">
+                    <h3 class="font-teko text-3xl font-bold text-white uppercase tracking-wider mb-6 flex items-center justify-between">
+                        <span>Recordistas de Jogos</span>
+                        <i data-lucide="shield" class="w-6 h-6 text-cbn-gold"></i>
+                    </h3>
+                    <div class="space-y-4" id="jogos-list">
+                        <!-- JS Render -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIFORMES SECTION -->
+    <section id="uniformes" class="py-24 bg-cbn-darkBg relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="text-cbn-gold text-sm font-bold tracking-widest uppercase mb-2 block">O Manto Sagrado</span>
+                <h2 class="font-teko text-5xl sm:text-6xl font-bold uppercase tracking-wider">Uniformes da Lenda</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mt-4">
+                    A camisa mais famosa do esporte nasceu de um trauma — e de um concurso de jornal. Alterne entre o manto titular e o reserva e conheça a história de cada um.
+                </p>
+            </div>
+
+            <!-- Uniform Switcher Component -->
+            <div class="bg-cbn-cardBg border border-cbn-borderBg rounded-3xl p-6 sm:p-12 shadow-2xl relative">
+                <!-- Switch Buttons -->
+                <div class="flex justify-center gap-4 mb-10">
+                    <button id="btn-amarelo" onclick="setUniform('amarelo')" class="px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-gold text-cbn-darkBg border border-cbn-gold shadow-lg shadow-cbn-gold/20">
+                        O Amarelo Canarinho
+                    </button>
+                    <button id="btn-azul" onclick="setUniform('azul')" class="px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-cardBg text-slate-300 border border-cbn-borderBg hover:border-cbn-gold/50">
+                        O Azul Campeão do Mundo
+                    </button>
+                </div>
+
+                <!-- Display Uniform Card -->
+                <div id="uniform-display" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Dynamic Graphic Preview -->
+                    <div class="flex justify-center items-center">
+                        <div id="jersey-graphic" class="w-64 h-72 sm:w-72 sm:h-80 rounded-2xl bg-gradient-to-br from-yellow-400 via-cbn-gold to-yellow-600 border-4 border-cbn-gold shadow-2xl flex flex-col items-center justify-between p-6 relative overflow-hidden transition-all duration-500">
+                            <!-- Collar -->
+                            <div id="jersey-collar" class="w-24 h-8 bg-cbn-green rounded-b-full border-b-2 border-cbn-darkBg"></div>
+                            
+                            <!-- Five Stars Emblem -->
+                            <div class="flex space-x-1 text-cbn-gold text-xs font-bold">
+                                ★ ★ ★ ★ ★
+                            </div>
+
+                            <!-- Mock Crest -->
+                            <div class="w-20 h-24 bg-cbn-blue rounded-xl border-2 border-cbn-gold flex flex-col items-center justify-center text-white font-teko font-bold shadow-md">
+                                <span class="text-xl text-cbn-gold">CBF</span>
+                                <span class="text-[9px] tracking-widest text-slate-200">BRASIL</span>
+                            </div>
+
+                            <!-- Number 10 -->
+                            <div id="jersey-number" class="font-teko text-6xl font-bold text-cbn-green tracking-widest">
+                                10
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description Text -->
+                    <div class="space-y-4">
+                        <div class="inline-block px-3 py-1 rounded bg-cbn-gold/10 border border-cbn-gold/30 text-cbn-gold text-xs font-bold uppercase tracking-widest" id="uniform-badge">
+                            Manto Titular
+                        </div>
+                        <h3 class="font-teko text-4xl font-bold text-white uppercase tracking-wide" id="uniform-title">
+                            O Amarelo Canarinho
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light" id="uniform-desc">
+                            Após a tragédia do Maracanazo em 1950, a camisa branca com detalhes azuis foi rotulada como "azarada". Em 1953, o jornal *Correio da Manhã* organizou um concurso nacional para desenhar um novo uniforme que contivesse as quatro cores da bandeira nacional. O jovem Aldyr Garcia Schlee, de apenas 19 anos, venceu a disputa combinando a camisa amarela com gola e punhos verdes, calção azul e meias brancas. Nascia a icônica "Amarelinha", símbolo maior do futebol mundial.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-cbn-darkBg border-t border-cbn-borderBg py-12 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <span class="font-teko text-3xl font-bold text-white tracking-wider">SELEÇÃO <span class="text-cbn-gold">BRASILEIRA</span></span>
+            </div>
+            <p class="mb-4">Homenagem à história mais gloriosa do futebol mundial.</p>
+            <p class="text-xs text-slate-600">© 2026 Seleção Brasileira de Futebol — Todos os direitos reservados aos torcedores apaixonados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // -------------------------------------------------------------
+        // DATA: AS 5 COPAS
+        // -------------------------------------------------------------
+        const copasData = {
+            '1958': {
+                ano: '1958',
+                sede: 'Suécia',
+                final: 'Brasil 5 x 2 Suécia',
+                gols: '16 gols em 6 jogos',
+                artilheiro: 'Pelé (6 gols)',
+                elenco: 'Gilmar; Djalma Santos, Bellini, Orlando, Nilton Santos; Zito, Didi; Garrincha, Pelé, Vavá, Zagallo. Técnico: Vicente Feola.',
+                resumo: 'O primeiro título mundial marcou a apresentação do garoto Pelé (17 anos) e da genialidade de Garrincha ao mundo. Após passar pela fase de grupos e por jogos duros, o Brasil deu um show nas semifinais contra a França e na grande final contra os donos da casa, vencendo por 5 a 2 com direito a gol de chapéu histórico de Pelé.'
+            },
+            '1962': {
+                ano: '1962',
+                sede: 'Chile',
+                final: 'Brasil 3 x 1 Tchecoslováquia',
+                gols: '14 gols em 6 jogos',
+                artilheiro: 'Garrincha e Vavá (4 gols cada)',
+                elenco: 'Gilmar; Djalma Santos, Mauro, Zósimo, Nilton Santos; Zito, Didi; Garrincha, Amarildo, Vavá, Zagallo. Técnico: Aymoré Moreira.',
+                resumo: 'Pelé se lesionou gravemente logo na segunda partida contra a Tchecoslováquia. Parecia uma tragédia, mas Garrincha fez a maior atuação individual da história das Copas, acompanhado por Amarildo "O Possuído". O Brasil superou a Tchecoslováquia por 3 a 1 na final, garantindo o bicampeonato consecutivo.'
+            },
+            '1970': {
+                ano: '1970',
+                sede: 'México',
+                final: 'Brasil 4 x 1 Itália',
+                gols: '19 gols em 6 jogos',
+                artilheiro: 'Jairzinho (7 gols - marcou em todos os jogos)',
+                elenco: 'Félix; Carlos Alberto, Brito, Piazza, Everaldo; Clodoaldo, Gérson; Jairzinho, Tostão, Pelé, Rivellino. Técnico: Mário Zagallo.',
+                resumo: 'Considerada por especialistas a maior seleção de todos os tempos. Reunindo cinco camisas 10 de seus clubes no mesmo time titular, o Brasil venceu todos os 6 jogos da campanha. Na final inesquecível no Estádio Azteca, goleou a Itália por 4 a 1 e conquistou em definitivo a Taça Jules Rimet.'
+            },
+            '1994': {
+                ano: '1994',
+                sede: 'Estados Unidos',
+                final: 'Brasil 0 (3) x (2) 0 Itália',
+                gols: '11 gols em 7 jogos',
+                artilheiro: 'Romário (5 gols)',
+                elenco: 'Taffarel; Jorginho, Aldair, Marcio Santos, Branco; Mauro Silva, Dunga, Mazinho, Zinho; Bebeto, Romário. Técnico: Carlos Alberto Parreira.',
+                resumo: 'Após um jejum de 24 anos sem títulos mundiais, o Brasil montou uma equipe extremamente tática e sólida, liderada no ataque pela genialidade de Romário e pela sintonia com Bebeto. Em uma decisão emocionante contra a Itália no Rose Bowl, a taça foi decidida nos pênaltis após o chuto para fora de Baggio.'
+            },
+            '2002': {
+                ano: '2002',
+                sede: 'Coreia do Sul & Japão',
+                final: 'Brasil 2 x 0 Alemanha',
+                gols: '18 gols em 7 jogos',
+                artilheiro: 'Ronaldo Fenômeno (8 gols)',
+                elenco: 'Marcos; Lúcio, Edmílson, Roque Júnior; Cafu, Gilberto Silva, Kléberson, Roberto Carlos; Rivaldo, Ronaldinho Gaúcho, Ronaldo. Técnico: Luiz Felipe Scolari.',
+                resumo: 'A campanha perfeita da "Família Scolari". Ronaldo Fenômeno superou lesões gravíssimas no joelho para retornar no seu mais alto nível com o famoso corte cascão. Ao lado de Rivaldo e Ronaldinho, o trio "3R" destruiu os adversários. Na grande final, 2 a 0 contra a Alemanha em Yokohama, selando o Penta com 100% de aproveitamento.'
+            }
+        };
+
+        function switchCopa(ano) {
+            // Update Tab Styles
+            document.querySelectorAll('.copa-tab').forEach(btn => {
+                btn.classList.remove('bg-cbn-gold', 'text-cbn-darkBg', 'border-cbn-gold');
+                btn.classList.add('bg-cbn-cardBg', 'text-slate-300', 'border-cbn-borderBg');
+            });
+
+            const activeBtn = document.getElementById(`tab-${ano}`);
+            activeBtn.classList.remove('bg-cbn-cardBg', 'text-slate-300', 'border-cbn-borderBg');
+            activeBtn.classList.add('bg-cbn-gold', 'text-cbn-darkBg', 'border-cbn-gold');
+
+            // Update Content
+            const data = copasData[ano];
+            const contentBox = document.getElementById('copa-content');
+
+            contentBox.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="flex flex-wrap items-center gap-4">
+                            <span class="font-teko text-5xl font-bold text-cbn-gold">COPA DE ${data.ano}</span>
+                            <span class="px-3 py-1 rounded bg-cbn-gold/10 border border-cbn-gold/30 text-cbn-gold text-xs font-bold uppercase tracking-wider">Sede: ${data.sede}</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Resumo da Campanha</h4>
+                            <p class="text-slate-200 text-base leading-relaxed font-light">${data.resumo}</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Escalação / Elenco Base</h4>
+                            <div class="bg-cbn-darkBg p-4 rounded-xl border border-cbn-borderBg text-slate-300 text-sm">
+                                ${data.elenco}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cbn-darkBg border border-cbn-borderBg p-6 rounded-xl space-y-6">
+                        <h4 class="font-teko text-2xl font-bold text-cbn-gold uppercase tracking-wider border-b border-cbn-borderBg pb-2">Estatísticas do Título</h4>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase block">Resultado da Final</span>
+                            <span class="font-teko text-3xl font-bold text-white">${data.final}</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase block">Total de Gols da Seleção</span>
+                            <span class="font-teko text-3xl font-bold text-white">${data.gols}</span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase block">Artilheiro Brasileiro</span>
+                            <span class="font-teko text-3xl font-bold text-cbn-gold">${data.artilheiro}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        switchCopa('1958');
+
+        
+        const idolosData = [
+            {
+                nome: 'Pelé',
+                alcunha: 'O Rei do Futebol',
+                copas: '3x Campeão (1958, 1962, 1970)',
+                gols: '77 Gols',
+                jogos: '92 Jogos',
+                descricao: 'O maior atleta de todos os tempos. Venceu três Copas do Mundo, revolucionou o esporte e marcou mais de 1.000 gols na carreira.'
+            },
+            {
+                nome: 'Garrincha',
+                alcunha: 'Anjo das Pernas Tortas',
+                copas: '2x Campeão (1958, 1962)',
+                gols: '33 Gols',
+                jogos: '50 Jogos',
+                descricao: 'O maior driblador da história. Carregou a seleção nas costas na Copa de 62 após a lesão de Pelé e nunca perdeu um jogo jogando com Pelé.'
+            },
+            {
+                nome: 'Ronaldo Fenômeno',
+                alcunha: 'O Fenômeno',
+                copas: '2x Campeão (1994, 2002)',
+                gols: '62 Gols',
+                jogos: '98 Jogos',
+                descricao: 'Um dos atacantes mais devastadores do futebol. Protagonizou a superação lendária de 2002 sendo o artilheiro isolado com 8 gols.'
+            },
+            {
+                nome: 'Romário',
+                alcunha: 'Baixinho',
+                copas: '1x Campeão (1994)',
+                gols: '55 Gols',
+                jogos: '70 Jogos',
+                descricao: 'Genio da grande área. Decisivo, decisivo e frio, colocou a Seleção nas costas na conquista do Tetracampeonato nos EUA.'
+            },
+            {
+                nome: 'Zico',
+                alcunha: 'Galinho de Quintino',
+                copas: 'Ídolo de 1978, 1982, 1986',
+                gols: '48 Gols',
+                jogos: '71 Jogos',
+                descricao: 'O maestro do futebol arte de 1982. Cobrador de faltas impecável e um dos camisas 10 mais talentosos da história.'
+            },
+            {
+                nome: 'Ronaldinho Gaúcho',
+                alcunha: 'Bruxo',
+                copas: '1x Campeão (2002)',
+                gols: '33 Gols',
+                jogos: '97 Jogos',
+                descricao: 'Pura magia e plástica com a bola nos pés. Autor do memorável gol de falta contra a Inglaterra na Copa de 2002.'
+            },
+            {
+                nome: 'Neymar Jr',
+                alcunha: 'O Craque Moderno',
+                copas: 'Ouro Olímpico (2016) · Copa das Confederações 2013 ',
+                gols: '79 Gols',
+                jogos: '128 Jogos',
+                descricao: 'Maior artilheiro em jogos oficiais da Seleção Brasileira em contagens da FIFA, protagonista da conquista inédita do Ouro Olímpico.'
+            },
+            {
+                nome: 'Ricardo Izecson',
+                alcunha: 'Kaká',
+                copas: '1x Copa Do mundo (2002) · Copa das Confederações 2005 · 2009 Bola de Ouro 2007',
+                gols: '29 Gols',
+                jogos: '95 Jogos',
+                descricao: 'Elegância e velocidade em um só jogador. Campeão do mundo em 2002 e eleito o melhor do planeta em 2007 — o último brasileiro a vencer a Bola de Ouro antes da era Neymar.'
+            },
+            {
+                nome: 'Rivaldo Ferreira',
+                alcunha: 'Rivaldo',
+                copas: 'Copa do Mundo 2002 · Copa América 1999 · Bola de Ouro 1999',
+                gols: '35 Gols',
+                jogos: '74 Jogos',
+                descricao: 'Subestimado por muitos, decisivo sempre. Marcou 5 gols na campanha do Penta de 2002 e foi eleito melhor do mundo em 1999, ano em que carregou o Brasil ao título da Copa América.'
+            }
+        ];
+
+        const idolosContainer = document.getElementById('idolos-grid');
+        idolosData.forEach((idol, idx) => {
+            idolosContainer.innerHTML += `
+                <div class="bg-cbn-cardBg border border-cbn-borderBg rounded-2xl p-6 hover:border-cbn-gold/50 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="font-teko text-3xl font-bold text-cbn-gold">#0${idx + 1}</span>
+                            <span class="px-2.5 py-1 rounded bg-cbn-darkBg border border-cbn-borderBg text-[11px] font-semibold text-slate-300">${idol.copas}</span>
+                        </div>
+                        <h3 class="font-teko text-3xl font-bold text-white uppercase tracking-wide leading-none">${idol.nome}</h3>
+                        <span class="text-xs font-semibold text-cbn-gold block mb-3">${idol.alcunha}</span>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light mb-6">${idol.descricao}</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 pt-4 border-t border-cbn-borderBg/60 text-center">
+                        <div class="bg-cbn-darkBg/60 p-2 rounded-lg">
+                            <span class="text-[10px] text-slate-400 uppercase block">Gols</span>
+                            <span class="font-teko text-xl font-bold text-white">${idol.gols}</span>
+                        </div>
+                        <div class="bg-cbn-darkBg/60 p-2 rounded-lg">
+                            <span class="text-[10px] text-slate-400 uppercase block">Jogos</span>
+                            <span class="font-teko text-xl font-bold text-white">${idol.jogos}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+
+
+        const artilheiros = [
+            { nome: 'Neymar Jr', gols: '79 gols', jogos: '128 jogos' },
+            { nome: 'Pelé', gols: '77 gols', jogos: '92 jogos' },
+            { nome: 'Ronaldo Fenômeno', gols: '62 gols', jogos: '98 jogos' },
+            { nome: 'Romário', gols: '55 gols', jogos: '70 jogos' },
+            { nome: 'Zico', gols: '48 gols', jogos: '71 jogos' }
+        ];
+
+        const recordistasJogos = [
+            { nome: 'Cafu', jogos: '142 jogos', pos: 'Lateral-Direito' },
+            { nome: 'Roberto Carlos', jogos: '125 jogos', pos: 'Lateral-Esquerdo' },
+            { nome: 'Neymar Jr', jogos: '128 jogos', pos: 'Atacante' },
+            { nome: 'Dani Alves', jogos: '126 jogos', pos: 'Lateral-Direito' },
+            { nome: 'Thiago Silva', jogos: '113 jogos', pos: 'Zagueiro' }
+        ];
+
+        const artilheirosList = document.getElementById('artilheiros-list');
+        artilheiros.forEach(item => {
+            artilheirosList.innerHTML += `
+                <div class="flex items-center justify-between p-3 rounded-xl bg-cbn-darkBg border border-cbn-borderBg">
+                    <span class="font-semibold text-slate-200 text-sm sm:text-base">${item.nome}</span>
+                    <div class="text-right">
+                        <span class="font-teko text-2xl font-bold text-cbn-gold block leading-none">${item.gols}</span>
+                        <span class="text-[10px] text-slate-400">${item.jogos}</span>
+                    </div>
+                </div>
+            `;
+        });
+
+        const jogosList = document.getElementById('jogos-list');
+        recordistasJogos.forEach(item => {
+            jogosList.innerHTML += `
+                <div class="flex items-center justify-between p-3 rounded-xl bg-cbn-darkBg border border-cbn-borderBg">
+                    <div>
+                        <span class="font-semibold text-slate-200 text-sm sm:text-base block leading-none">${item.nome}</span>
+                        <span class="text-[10px] text-slate-400">${item.pos}</span>
+                    </div>
+                    <span class="font-teko text-2xl font-bold text-cbn-gold">${item.jogos}</span>
+                </div>
+            `;
+        });
+
+
+        function setUniform(type) {
+            const btnAmarelo = document.getElementById('btn-amarelo');
+            const btnAzul = document.getElementById('btn-azul');
+            const graphic = document.getElementById('jersey-graphic');
+            const collar = document.getElementById('jersey-collar');
+            const number = document.getElementById('jersey-number');
+            const badge = document.getElementById('uniform-badge');
+            const title = document.getElementById('uniform-title');
+            const desc = document.getElementById('uniform-desc');
+
+            if (type === 'amarelo') {
+                btnAmarelo.className = 'px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-gold text-cbn-darkBg border border-cbn-gold shadow-lg shadow-cbn-gold/20';
+                btnAzul.className = 'px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-cardBg text-slate-300 border border-cbn-borderBg hover:border-cbn-gold/50';
+
+                graphic.className = 'w-64 h-72 sm:w-72 sm:h-80 rounded-2xl bg-gradient-to-br from-yellow-400 via-cbn-gold to-yellow-600 border-4 border-cbn-gold shadow-2xl flex flex-col items-center justify-between p-6 relative overflow-hidden transition-all duration-500';
+                collar.className = 'w-24 h-8 bg-cbn-green rounded-b-full border-b-2 border-cbn-darkBg';
+                number.className = 'font-teko text-6xl font-bold text-cbn-green tracking-widest';
+
+                badge.textContent = 'Manto Titular';
+                title.textContent = 'O Amarelo Canarinho';
+                desc.textContent = 'Após a tragédia do Maracanazo em 1950, a camisa branca com detalhes azuis foi rotulada como "azarada". Em 1953, o jornal Correio da Manhã organizou um concurso nacional para desenhar um novo uniforme que contivesse as quatro cores da bandeira nacional. O jovem Aldyr Garcia Schlee, de apenas 19 anos, venceu a disputa combinando a camisa amarela com gola e punhos verdes, calção azul e meias brancas. Nascia a icônica "Amarelinha", símbolo maior do futebol mundial.';
+            } else {
+                btnAzul.className = 'px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-blue text-white border border-cbn-gold shadow-lg shadow-cbn-blue/40';
+                btnAmarelo.className = 'px-6 py-3 rounded-xl font-teko text-xl font-bold tracking-wider uppercase transition-all bg-cbn-cardBg text-slate-300 border border-cbn-borderBg hover:border-cbn-gold/50';
+
+                graphic.className = 'w-64 h-72 sm:w-72 sm:h-80 rounded-2xl bg-gradient-to-br from-blue-700 via-cbn-blue to-blue-950 border-4 border-cbn-gold shadow-2xl flex flex-col items-center justify-between p-6 relative overflow-hidden transition-all duration-500';
+                collar.className = 'w-24 h-8 bg-white rounded-b-full border-b-2 border-cbn-darkBg';
+                number.className = 'font-teko text-6xl font-bold text-cbn-gold tracking-widest';
+
+                badge.textContent = 'Manto Reserva';
+                title.textContent = 'O Azul Campeão do Mundo';
+                desc.textContent = 'A mística da camisa azul nasceu na final da Copa do Mundo de 1958, na Suécia. Como os donos da casa também jogavam de amarelo, o sorteio definiu que o Brasil deveria mudar de uniforme. Sem uma camisa reserva oficial, a comissão técnica comprou um jogo de camisas azuis no comércio local de Estocolmo, costurou o escudo da CBD e os números amarelados às pressas. O Brasil venceu por 5 a 2 e a camisa azul eternizou-se como a roupagem da primeira estrela mundial.';
+            }
+        }
+    </script>
+</body>
+</html>
